@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15386458423610" configfile="/Navigation1/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="done.xhtml" x="770" y="220" id="pf15386703468770" referenceLink="//@navigationRule.4/@navigationCase.1/@toViewId|" outlinks="pf15386703468771" inlinks="pf15386703468772 pf15386703468773 pf15386703468774" path="/done.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="122" y="178" id="pf15386703468785" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf15386703468786 pf15386703468787" inlinks="pf15386703468771" path="/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="again.xhtml" x="554" y="423" id="pf15386703468788" referenceLink="//@navigationRule.4/@navigationCase.0/@toViewId|" outlinks="pf15386703468789 pf153867034687810 pf15386703468773" inlinks="pf15386703468786 pf153867034687811 pf153867034687812" path="/again.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="success.xhtml" x="338" y="381" id="pf153867034687813" referenceLink="//@navigationRule.4/@navigationCase.2/@toViewId|" outlinks="pf153867034687811 pf15386703468772 pf153867034687814" inlinks="pf15386703468787 pf153867034687814 pf153867034687810 pf153867034687815" path="/success.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="failure.xhtml" x="122" y="604" id="pf153867034687816" referenceLink="//@navigationRule.4/@fromViewId|" outlinks="pf153867034687812 pf15386703468774 pf153867034687815" inlinks="pf15386703468789" path="/failure.xhtml"/>
+  <links id="pf15386703468771" target="pf15386703468785" source="pf15386703468770" outcome="startOver" redirect="true"/>
+  <links id="pf15386703468786" target="pf15386703468788" source="pf15386703468785" outcome="again" redirect="true"/>
+  <links id="pf15386703468787" target="pf153867034687813" source="pf15386703468785" outcome="success" redirect="true"/>
+  <links id="pf153867034687811" target="pf15386703468788" source="pf153867034687813" outcome="again" redirect="true"/>
+  <links id="pf15386703468772" target="pf15386703468770" source="pf153867034687813" outcome="done" redirect="true"/>
+  <links id="pf15386703468789" target="pf153867034687816" source="pf15386703468788" outcome="failure" redirect="true"/>
+  <links id="pf153867034687810" target="pf153867034687813" source="pf15386703468788" outcome="success" redirect="true"/>
+  <links id="pf15386703468773" target="pf15386703468770" source="pf15386703468788" outcome="done" redirect="true"/>
+  <links id="pf153867034687812" target="pf15386703468788" source="pf153867034687816" outcome="again" redirect="true"/>
+  <links id="pf15386703468774" target="pf15386703468770" source="pf153867034687816" outcome="done" redirect="true"/>
+  <links id="pf153867034687815" target="pf153867034687813" source="pf153867034687816" outcome="success" redirect="true"/>
+  <links id="pf153867034687814" target="pf153867034687813" source="pf153867034687813" outcome="success">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+</pageflow:Pageflow>
